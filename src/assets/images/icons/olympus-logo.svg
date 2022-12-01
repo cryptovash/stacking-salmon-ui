@@ -1,0 +1,34 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M0.65625 123.546C0.65625 55.3135 55.9697 0 124.202 0C192.435 0 247.748 55.3135 247.748 123.546C247.748 164.416 227.904 200.65 197.325 223.139H247.748V255.917H153.198V243.671V223.139V209.585C189.109 197.487 214.971 163.537 214.971 123.546C214.971 73.416 174.332 32.7775 124.202 32.7775C74.0722 32.7775 33.4338 73.416 33.4338 123.546C33.4338 163.537 59.2956 197.487 95.2068 209.585V223.139V243.671V255.917H0.65625V223.139H51.0802C20.501 200.65 0.65625 164.416 0.65625 123.546Z",
+  fill: "currentColor"
+});
+
+function SvgOlympusLogo(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 248,
+    height: 256,
+    viewBox: "0 0 248 256",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref2);
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgOlympusLogo);
+export default __webpack_public_path__ + "static/media/olympus-logo.55481a85.svg";
+export { ForwardRef as ReactComponent };

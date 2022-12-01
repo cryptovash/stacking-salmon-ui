@@ -1,0 +1,32 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M14.7233 2.15517L16 0.933837V0.666504H11.5773L8.42533 8.51184L4.83933 0.666504H0.202V0.933837L1.69333 2.72917C1.83867 2.86184 1.91467 3.05584 1.89533 3.25117V10.3065C1.94133 10.5605 1.85867 10.8218 1.68 11.0065L0 13.0425V13.3065H4.76333V13.0392L3.08333 11.0065C2.90133 10.8212 2.81533 10.5645 2.852 10.3065V4.20384L7.03333 13.3098H7.51933L11.1147 4.20384V11.4578C11.1147 11.6492 11.1147 11.6885 10.9893 11.8138L9.696 13.0652V13.3332H15.9707V13.0658L14.724 11.8452C14.6147 11.7625 14.558 11.6238 14.5813 11.4892V2.51117C14.558 2.37584 14.614 2.23717 14.7233 2.15517Z",
+  fill: "currentColor"
+});
+
+function SvgMediumLogo(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    viewBox: "0 0 16 14",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref2);
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgMediumLogo);
+export default __webpack_public_path__ + "static/media/medium-logo.45a59001.svg";
+export { ForwardRef as ReactComponent };

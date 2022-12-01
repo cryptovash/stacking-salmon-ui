@@ -1,0 +1,84 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("circle", {
+  cx: 1000,
+  cy: 1000,
+  r: 960.952,
+  fill: "white",
+  stroke: "white",
+  strokeWidth: 78.0966
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("g", {
+  mask: "url(#mask0_1076:538)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M737.879 1565L798.662 1504.22M859.446 1565L798.662 1504.22M859.446 1443.43L798.662 1504.22M737.879 1443.43L798.662 1504.22",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M439.998 1275.07L500.782 1214.28M561.565 1275.07L500.782 1214.28M561.565 1153.5L500.782 1214.28M439.998 1153.5L500.782 1214.28",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M1443.38 1261.5L1504.17 1200.72M1564.95 1261.5L1504.17 1200.72M1564.95 1139.93L1504.17 1200.72M1443.38 1139.93L1504.17 1200.72",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M1153.47 1559.35L1214.25 1498.57M1275.04 1559.35L1214.25 1498.57M1275.04 1437.79L1214.25 1498.57M1153.47 1437.79L1214.25 1498.57",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M434.367 859.389L495.151 798.605M555.934 859.389L495.151 798.605M555.934 737.822L495.151 798.605M434.367 737.822L495.151 798.605",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M1139.95 555.922L1200.73 495.138M1261.52 555.922L1200.73 495.138M1261.52 434.355L1200.73 495.138M1139.95 434.355L1200.73 495.138",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M1437.81 845.84L1498.6 785.056M1559.38 845.84L1498.6 785.056M1559.38 724.273L1498.6 785.056M1437.81 724.273L1498.6 785.056",
+  stroke: "black",
+  strokeWidth: 36.2285
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M724.285 561.521L785.069 500.738M845.852 561.521L785.069 500.738M845.852 439.955L785.069 500.738M724.285 439.955L785.069 500.738",
+  stroke: "black",
+  strokeWidth: 36.2285
+}));
+
+function SvgXtarotX3(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 2000,
+    height: 2000,
+    viewBox: "0 0 2000 2000",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("mask", {
+    id: "mask0_1076:538",
+    style: {
+      maskType: "alpha"
+    },
+    maskUnits: "userSpaceOnUse",
+    x: 0,
+    y: 0,
+    width: 2000,
+    height: 2000
+  }, _ref2), _ref3);
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgXtarotX3);
+export default __webpack_public_path__ + "static/media/xtarot-x3.c0f7d886.svg";
+export { ForwardRef as ReactComponent };

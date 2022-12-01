@@ -1,0 +1,201 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("circle", {
+  cx: 112.437,
+  cy: 112.195,
+  r: 108.043,
+  stroke: "white",
+  strokeWidth: 8
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("path", {
+  d: "M126.952 104.307C128.495 103.937 130.184 103.739 131.912 103.739C133.639 103.739 135.328 103.937 136.871 104.307C138.419 104.678 139.728 105.2 140.75 105.791C141.994 106.511 143.682 106.775 144.854 105.943L146.24 104.961C148.178 103.586 148.63 100.86 146.72 99.4482C146.198 99.0626 145.649 98.7054 145.081 98.3765C143.232 97.3063 141.121 96.5033 138.888 95.9682C136.651 95.4319 134.284 95.1621 131.912 95.1621C129.54 95.1621 127.172 95.4319 124.935 95.9682C122.702 96.5033 120.591 97.3063 118.742 98.3765C116.901 99.4423 115.267 100.805 114.074 102.472C113.543 103.214 113.365 103.973 113.328 104.133L113.324 104.15C113.255 104.441 113.212 104.717 113.185 104.926C113.128 105.356 113.091 105.852 113.062 106.349C113.005 107.362 112.971 108.69 112.953 110.186C112.917 113.193 112.941 117.085 112.989 120.945C113.037 124.813 113.108 128.68 113.168 131.647C113.192 132.849 113.214 133.905 113.232 134.753L113.244 135.313C113.254 135.775 113.261 136.15 113.267 136.426L113.27 136.611L113.271 136.679L113.273 136.757C113.273 136.781 113.273 136.802 113.274 136.818L113.274 136.847L113.274 136.874L113.275 136.876L113.275 136.877L113.277 136.878H119.565C120.85 136.878 121.873 135.841 121.847 134.563L121.846 134.559C121.784 131.554 121.67 126.111 121.605 120.84C121.557 116.996 121.534 113.189 121.569 110.289C121.577 109.651 121.587 109.065 121.601 108.54C121.629 107.428 122.107 106.351 123.074 105.791C124.095 105.2 125.404 104.678 126.952 104.307Z",
+  fill: "url(#paint0_linear)"
+});
+
+var _ref4 = /*#__PURE__*/React.createElement("path", {
+  d: "M86.1307 105.391C87.5981 105.043 89.2115 104.856 90.8668 104.856C92.5222 104.856 94.1357 105.043 95.603 105.391C97.6985 105.888 100.108 105.256 101.182 103.397L101.385 103.045C102.571 100.991 101.857 98.3412 99.5947 97.6058C98.9451 97.3946 98.2785 97.2084 97.5991 97.0473C95.4442 96.5365 93.159 96.2787 90.8668 96.2787C88.5747 96.2787 86.2895 96.5365 84.1346 97.0473C81.9835 97.5572 79.9615 98.3195 78.201 99.3269C77.7477 99.5863 77.3094 99.8633 76.8895 100.158C74.9447 101.523 75.3747 104.251 77.3053 105.636L79.0125 106.86C80.0002 107.568 81.4403 107.367 82.4957 106.763C83.4312 106.227 84.6567 105.74 86.1307 105.391Z",
+  fill: "url(#paint1_linear)"
+});
+
+var _ref5 = /*#__PURE__*/React.createElement("g", {
+  filter: "url(#filter2_i)"
+}, /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  clipRule: "evenodd",
+  d: "M57.0469 111.926C57.0469 92.4657 67.4773 74.4832 84.4092 64.7528C101.341 55.0225 122.202 55.0225 139.134 64.7528C156.066 74.4832 166.496 92.4657 166.496 111.926C166.496 131.387 156.066 149.369 139.134 159.1C122.202 168.83 101.341 168.83 84.4092 159.1C67.4773 149.369 57.0469 131.387 57.0469 111.926ZM131.91 103.739C130.182 103.739 128.494 103.937 126.951 104.307C125.403 104.678 124.093 105.2 123.072 105.791C122.106 106.351 121.627 107.428 121.599 108.54C121.586 109.065 121.575 109.651 121.568 110.289C121.533 113.189 121.556 116.996 121.603 120.84C121.669 126.111 121.782 131.555 121.845 134.559L121.845 134.563C121.872 135.841 120.848 136.878 119.564 136.878H113.275L113.274 136.878L113.273 136.876L113.273 136.874L113.273 136.848L113.272 136.818L113.271 136.757L113.27 136.679L113.269 136.611L113.265 136.426C113.26 136.15 113.252 135.775 113.242 135.313L113.231 134.753C113.213 133.905 113.191 132.849 113.166 131.647C113.107 128.68 113.035 124.813 112.987 120.946C112.939 117.085 112.915 113.193 112.951 110.186C112.97 108.69 113.003 107.362 113.061 106.349C113.089 105.852 113.127 105.357 113.184 104.927C113.211 104.717 113.253 104.441 113.323 104.15L113.327 104.134C113.364 103.974 113.541 103.214 114.072 102.473C115.266 100.805 116.899 99.4425 118.741 98.3768C120.59 97.3066 122.701 96.5036 124.933 95.9684C127.17 95.4321 129.538 95.1624 131.91 95.1624C134.282 95.1624 136.65 95.4321 138.887 95.9684C141.119 96.5036 143.231 97.3066 145.08 98.3768C145.648 98.7057 146.196 99.0628 146.718 99.4485C148.629 100.86 148.177 103.587 146.239 104.961L144.853 105.944C143.68 106.775 141.993 106.512 140.748 105.791C139.727 105.2 138.417 104.678 136.869 104.307C135.327 103.937 133.638 103.739 131.91 103.739ZM90.8654 104.856C89.21 104.856 87.5966 105.043 86.1293 105.391C84.6552 105.741 83.4298 106.228 82.4943 106.763C81.4389 107.367 79.9987 107.569 79.011 106.86L77.3038 105.636C75.3732 104.251 74.9433 101.523 76.8881 100.158C77.308 99.8636 77.7463 99.5865 78.1996 99.3271C79.96 98.3197 81.9821 97.5574 84.1332 97.0476C86.2881 96.5368 88.5733 96.279 90.8654 96.279C93.1576 96.279 95.4427 96.5368 97.5976 97.0476C98.2771 97.2086 98.9437 97.3949 99.5932 97.6061C101.855 98.3415 102.57 100.992 101.384 103.045L101.181 103.397C100.107 105.256 97.6971 105.888 95.6015 105.391C94.1342 105.043 92.5208 104.856 90.8654 104.856Z",
+  fill: "white"
+}));
+
+var _ref6 = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("filter", {
+  id: "filter0_i",
+  x: 0.394531,
+  y: 0.152344,
+  width: 228.076,
+  height: 228.076,
+  filterUnits: "userSpaceOnUse",
+  colorInterpolationFilters: "sRGB"
+}, /*#__PURE__*/React.createElement("feFlood", {
+  floodOpacity: 0,
+  result: "BackgroundImageFix"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in: "SourceGraphic",
+  in2: "BackgroundImageFix",
+  result: "shape"
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  in: "SourceAlpha",
+  type: "matrix",
+  values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+  result: "hardAlpha"
+}), /*#__PURE__*/React.createElement("feOffset", {
+  dx: 3.99027,
+  dy: 3.99027
+}), /*#__PURE__*/React.createElement("feGaussianBlur", {
+  stdDeviation: 3.99027
+}), /*#__PURE__*/React.createElement("feComposite", {
+  in2: "hardAlpha",
+  operator: "arithmetic",
+  k2: -1,
+  k3: 1
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  type: "matrix",
+  values: "0 0 0 0 0.55 0 0 0 0 0.55 0 0 0 0 0.55 0 0 0 0.1 0"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in2: "shape",
+  result: "effect1_innerShadow"
+})), /*#__PURE__*/React.createElement("filter", {
+  id: "filter1_i",
+  x: 75.627,
+  y: 95.1621,
+  width: 72.3172,
+  height: 44.6532,
+  filterUnits: "userSpaceOnUse",
+  colorInterpolationFilters: "sRGB"
+}, /*#__PURE__*/React.createElement("feFlood", {
+  floodOpacity: 0,
+  result: "BackgroundImageFix"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in: "SourceGraphic",
+  in2: "BackgroundImageFix",
+  result: "shape"
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  in: "SourceAlpha",
+  type: "matrix",
+  values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+  result: "hardAlpha"
+}), /*#__PURE__*/React.createElement("feOffset", {
+  dy: 2.93779
+}), /*#__PURE__*/React.createElement("feGaussianBlur", {
+  stdDeviation: 3.65225
+}), /*#__PURE__*/React.createElement("feComposite", {
+  in2: "hardAlpha",
+  operator: "arithmetic",
+  k2: -1,
+  k3: 1
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  type: "matrix",
+  values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in2: "shape",
+  result: "effect1_innerShadow"
+})), /*#__PURE__*/React.createElement("filter", {
+  id: "filter2_i",
+  x: 57.0469,
+  y: 57.4551,
+  width: 113.44,
+  height: 112.933,
+  filterUnits: "userSpaceOnUse",
+  colorInterpolationFilters: "sRGB"
+}, /*#__PURE__*/React.createElement("feFlood", {
+  floodOpacity: 0,
+  result: "BackgroundImageFix"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in: "SourceGraphic",
+  in2: "BackgroundImageFix",
+  result: "shape"
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  in: "SourceAlpha",
+  type: "matrix",
+  values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+  result: "hardAlpha"
+}), /*#__PURE__*/React.createElement("feOffset", {
+  dx: 3.99027,
+  dy: 3.99027
+}), /*#__PURE__*/React.createElement("feGaussianBlur", {
+  stdDeviation: 3.99027
+}), /*#__PURE__*/React.createElement("feComposite", {
+  in2: "hardAlpha",
+  operator: "arithmetic",
+  k2: -1,
+  k3: 1
+}), /*#__PURE__*/React.createElement("feColorMatrix", {
+  type: "matrix",
+  values: "0 0 0 0 0.55 0 0 0 0 0.55 0 0 0 0 0.55 0 0 0 0.5 0"
+}), /*#__PURE__*/React.createElement("feBlend", {
+  mode: "normal",
+  in2: "shape",
+  result: "effect1_innerShadow"
+})), /*#__PURE__*/React.createElement("linearGradient", {
+  id: "paint0_linear",
+  x1: 111.951,
+  y1: 7.91211,
+  x2: 111.951,
+  y2: 216.476,
+  gradientUnits: "userSpaceOnUse"
+}, /*#__PURE__*/React.createElement("stop", null), /*#__PURE__*/React.createElement("stop", {
+  offset: 1,
+  stopColor: "#002626"
+})), /*#__PURE__*/React.createElement("linearGradient", {
+  id: "paint1_linear",
+  x1: 111.951,
+  y1: 7.91211,
+  x2: 111.951,
+  y2: 216.476,
+  gradientUnits: "userSpaceOnUse"
+}, /*#__PURE__*/React.createElement("stop", null), /*#__PURE__*/React.createElement("stop", {
+  offset: 1,
+  stopColor: "#002626"
+})));
+
+function SvgTarotlogofaceinline(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "100%",
+    viewBox: "0 0 225 225",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("g", {
+    filter: "url(#filter0_i)"
+  }, /*#__PURE__*/React.createElement("g", {
+    style: {
+      mixBlendMode: "screen"
+    }
+  }, _ref2), /*#__PURE__*/React.createElement("g", {
+    style: {
+      mixBlendMode: "darken"
+    },
+    filter: "url(#filter1_i)"
+  }, _ref3, _ref4), _ref5), _ref6);
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgTarotlogofaceinline);
+export default __webpack_public_path__ + "static/media/tarotlogoface.inline.1ab89b9d.svg";
+export { ForwardRef as ReactComponent };

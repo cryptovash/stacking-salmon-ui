@@ -1,0 +1,64 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("circle", {
+  cx: 1000,
+  cy: 1000,
+  r: 960.952,
+  fill: "white",
+  stroke: "white",
+  strokeWidth: 78.0966
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("g", {
+  mask: "url(#mask0_1076:538)"
+}, /*#__PURE__*/React.createElement("circle", {
+  cx: 1000,
+  cy: 1000,
+  r: 960.952,
+  fill: "white",
+  stroke: "white",
+  strokeWidth: 78.0966
+}), /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  clipRule: "evenodd",
+  d: "M1953 1000C1953 1526.33 1526.33 1953 1000 1953C473.673 1953 47 1526.33 47 1000C47 473.673 473.673 47 1000 47C1526.33 47 1953 473.673 1953 1000ZM955.981 126.923C924.444 141.265 900.563 184.587 852.803 271.231L828.397 315.507C805.369 357.284 793.854 378.173 776.953 391.356C762.044 402.985 744.26 410.351 725.496 412.671C704.222 415.3 681.31 408.671 635.485 395.414L586.92 381.364C491.882 353.869 444.363 340.121 411.921 352.28C383.645 362.878 361.335 385.188 350.737 413.464C338.578 445.906 352.326 493.425 379.821 588.463L393.871 637.029C407.128 682.853 413.757 705.766 411.127 727.039C408.808 745.803 401.442 763.587 389.813 778.496C376.63 795.397 355.741 806.912 313.964 829.941L269.688 854.346C183.044 902.107 139.722 925.987 125.38 957.524C112.88 985.012 112.88 1016.56 125.38 1044.05C139.722 1075.59 183.044 1099.47 269.688 1147.23L313.964 1171.64C355.741 1194.66 376.63 1206.18 389.813 1223.08C401.442 1237.99 408.808 1255.77 411.127 1274.54C413.757 1295.81 407.128 1318.72 393.871 1364.55L379.821 1413.11C352.326 1508.15 338.578 1555.67 350.737 1588.11C361.335 1616.39 383.645 1638.7 411.921 1649.3C444.363 1661.45 491.882 1647.71 586.92 1620.21L635.485 1606.16L635.488 1606.16C681.311 1592.9 704.223 1586.28 725.496 1588.9C744.26 1591.22 762.044 1598.59 776.953 1610.22C793.854 1623.4 805.369 1644.29 828.397 1686.07L852.803 1730.34C900.563 1816.99 924.444 1860.31 955.981 1874.65C983.469 1887.15 1015.02 1887.15 1042.51 1874.65C1074.05 1860.31 1097.93 1816.99 1145.69 1730.34L1170.09 1686.07C1193.12 1644.29 1204.63 1623.4 1221.54 1610.22C1236.45 1598.59 1254.23 1591.22 1272.99 1588.9C1292.94 1586.44 1314.32 1592.11 1354.67 1603.75C1357.36 1604.53 1360.14 1605.33 1363 1606.16L1363 1606.16L1363 1606.16L1411.57 1620.21C1506.61 1647.71 1554.13 1661.45 1586.57 1649.3C1614.84 1638.7 1637.15 1616.39 1647.75 1588.11C1659.91 1555.67 1646.16 1508.15 1618.67 1413.11L1604.62 1364.55C1591.36 1318.72 1584.73 1295.81 1587.36 1274.54C1589.68 1255.77 1597.05 1237.99 1608.68 1223.08C1621.86 1206.18 1642.75 1194.66 1684.53 1171.64L1728.8 1147.23C1815.45 1099.47 1858.77 1075.59 1873.11 1044.05C1885.61 1016.56 1885.61 985.012 1873.11 957.524C1858.77 925.987 1815.45 902.107 1728.8 854.346L1684.53 829.941C1642.75 806.912 1621.86 795.397 1608.68 778.496C1597.05 763.587 1589.68 745.803 1587.36 727.039C1584.73 705.766 1591.36 682.853 1604.62 637.029L1618.67 588.463C1646.16 493.425 1659.91 445.906 1647.75 413.464C1637.15 385.188 1614.84 362.878 1586.57 352.28C1554.13 340.121 1506.61 353.869 1411.57 381.364L1363 395.414C1317.18 408.671 1294.27 415.3 1272.99 412.671C1254.23 410.351 1236.45 402.985 1221.54 391.356C1204.63 378.173 1193.12 357.285 1170.09 315.507L1145.69 271.231L1145.59 271.056L1145.46 270.823C1142.56 265.552 1139.74 260.44 1137 255.488C1094.91 179.285 1072.07 140.369 1042.51 126.923C1015.02 114.423 983.469 114.423 955.981 126.923Z",
+  fill: "black"
+}));
+
+function SvgXtarotRays(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 2000,
+    height: 2000,
+    viewBox: "0 0 2000 2000",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("mask", {
+    id: "mask0_1076:538",
+    style: {
+      maskType: "alpha"
+    },
+    maskUnits: "userSpaceOnUse",
+    x: 0,
+    y: 0,
+    width: 2000,
+    height: 2000
+  }, _ref2), _ref3);
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgXtarotRays);
+export default __webpack_public_path__ + "static/media/xtarot-rays.83bc2565.svg";
+export { ForwardRef as ReactComponent };

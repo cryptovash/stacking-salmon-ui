@@ -1,0 +1,226 @@
+@import "assets/css/bootstrap-4.5.0/scss/bootstrap";
+
+html {
+  padding-right: 0 !important;
+  overflow-y: scroll !important;
+}
+
+body {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace !important;
+}
+
+img {
+  will-change: transform;
+}
+
+.card {
+  border-radius: 8px;
+  border: 0 none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 2px 4px 1px;
+
+  .card-body {
+    padding: 0;
+  }
+}
+
+.article {
+  margin: 2rem auto;
+  padding: 4rem 4rem;
+
+  a,
+  a:hover,
+  a:link,
+  a:visited {
+    color: #00a368;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+  p,
+  ul {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDelay2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.tarot-fade-in {
+  animation: fadeInDelay2 2s;
+}
+
+.logos-container {
+  .first {
+    height: 10px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 212px;
+    max-width: 26.5vw;
+  }
+  .combined {
+    display: inline-block;
+    position: relative;
+  }
+  .combined > :first-child ~ * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .combined > :first-child {
+    animation-name: logoSpin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.tarot-text-logo {
+  max-width: 50vw;
+  max-height: calc(50vw / 2.5);
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logos-container {
+    .logos {
+      max-width: 21.2vw;
+    }
+  }
+  .tarot-text-logo {
+    max-width: 40vw;
+    max-height: calc(40vw / 2.5);
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .logos-container {
+    .logos {
+      max-width: 10.6vw;
+    }
+
+    .last {
+      height: 20px;
+    }
+  }
+  .tarot-text-logo {
+    max-width: 20vw;
+    max-height: calc(20vw / 2.5);
+  }
+}
+
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  .combined {
+    display: inline-block;
+    position: relative;
+  }
+  .combined > :first-child ~ * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .combined > :first-child {
+    animation-name: logoSpin;
+    animation-duration: 80000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.position-card-list {
+  &:empty {
+    &::before {
+      content: 'No positions to display';
+    }
+  }
+}
+
+.card-fade-in-0 {
+  animation: fadeInDelay2 3s;
+}
+
+.card-fade-in-1 {
+  animation: fadeInDelay2 6s;
+}
+
+.card-fade-in-2 {
+  animation: fadeInDelay2 9s;
+}
+
+.react-tooltip {
+  background-color: #0f1414 !important;
+  border: 1px solid rgba(255,255,255,.25) !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  box-shadow: 0 2px 8px 0 rgba(255,255,255,.15) !important;
+}
